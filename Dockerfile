@@ -11,7 +11,7 @@ RUN mkdir /grive2/build \
 	&& cmake .. \
 	&& make -j4 install
 
-FROM alpine:3.7
+FROM alpine:3.19
 
 RUN apk add yajl libcurl libgcrypt boost-program_options boost-regex libstdc++ boost-system \
 	&& apk add boost-filesystem --repository=http://dl-cdn.alpinelinux.org/alpine/edge/main
